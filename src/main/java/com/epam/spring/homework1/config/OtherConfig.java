@@ -8,14 +8,5 @@ import org.springframework.context.annotation.*;
 @ComponentScan("com.epam.spring.homework1.other")
 @Import(PetConfig.class)
 public class OtherConfig {
-    @Bean
-    @Primary
-    public Cheetah getBeanCheetah(){
-        return new Cheetah();
-    }
-    @Bean
-    @Qualifier("CheetahA")
-    public Cheetah getBeanCheetahA(){
-        return new Cheetah();
-    }
+   
 }
